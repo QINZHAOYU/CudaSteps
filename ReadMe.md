@@ -12,8 +12,8 @@ CUDA gpu 编程学习，基于 《CUDA 编程——基础与实践》（樊哲�
 
 CUDA 官方文档：  
 [CUDA c++编程指南](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html)  
-[CUDA c++最佳实践指南](https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html)
-[CUDA 运行时API手册](https://docs.nvidia.com/cuda/cuda-runtime-api/index.html)
-[CUDA 数学函数库API手册](https://docs.nvidia.com/cuda/cuda-math-api/index.html)
+[CUDA c++最佳实践指南](https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html)  
+[CUDA 运行时API手册](https://docs.nvidia.com/cuda/cuda-runtime-api/index.html)  
+[CUDA 数学函数库API手册](https://docs.nvidia.com/cuda/cuda-math-api/index.html)  
 
 
