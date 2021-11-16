@@ -1,0 +1,2 @@
+
+void cuda_clock();
