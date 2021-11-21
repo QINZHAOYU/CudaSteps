@@ -1,5 +1,5 @@
 
-#include "error.cuh"
+#include "common/error.cuh"
 #include <iostream>
 
 #ifdef USE_DP

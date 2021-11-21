@@ -1,4 +1,4 @@
-#include "error.cuh"
+#include "common/error.cuh"
 #include <cmath>
 #include <chrono>
 #include <iostream>

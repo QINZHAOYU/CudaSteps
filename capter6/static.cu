@@ -1,4 +1,4 @@
-#include "error.cuh"
+#include "common/error.cuh"
 
 
 // 静态全局内存变量(设备内存)。  
