@@ -9,6 +9,9 @@ CUDA gpu 编程学习，基于 《CUDA 编程——基础与实践》（樊哲�
 3. [简单 CUDA 程序的基本框架](./capter3/ReadMe.md)
 4. [CUDA 程序的错误检测](./capter4/ReadMe.md)
 5. [GPU 加速的关键](./capter5/ReadMe.md)
+6. [CUDA 内存组织](./capter6/ReadMe.md)
+7. [全局内存的合理使用](./capter7/ReadMe.md)
+
 
 CUDA 官方文档：  
 [CUDA c++编程指南](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html)  
