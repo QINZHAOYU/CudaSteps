@@ -138,6 +138,10 @@ SM 层次的 L1 缓存（一级缓存）和设备层次 L2 缓存（二级缓存
 
 一般来说，要尽量让 SM 的占有率不小于某值（如 25%），才有可能获得较高的性能。
 
++ 一个 SM 中最多拥有的线程块个数 Nb=16（开普勒和图灵架构）或 Nb=32（麦克斯韦、帕斯卡和伏特架构）；
++ 一个 SM 中最多拥有的线程格式为 Nt=1028（图灵架构）或 Nt=2048（开普勒到伏特架构）。
+
+在线程块中，每 32 个连续线程为一个 **线程束**。
 SM 中线程的执行是以线程束为单位的，所以最好将线程块大小取为线程束大小（32个线程）的整数倍（如 128）.
 
 ------
@@ -146,4 +150,18 @@ SM 中线程的执行是以线程束为单位的，所以最好将线程块大�
 
 使用 CUDA 运行时 API 函数查询所用GPU 规格。
 
+    Device id: 0
+    Device name: GeForce MX450
+    Compute capability: 7.5
+    Amount of global memory: 2 GB
+    Amount of constant memory: 64 KB
+    Maximum grid size: 2147483647, 65535, 65535
+    Maximum block size: 1024, 1024, 64
+    Number of SMs: 14
+    Maximum amount of shared memory per block: 48 KB
+    Maximum amount of shared memory per SM: 64 KB
+    Maximum number of registers per block: 64 K
+    Maximum number of registers per SM: 64 K
+    Maximum number of threads per block: 1024
+    Maximum number of threads per SM: 1024
 ------
