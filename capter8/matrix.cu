@@ -20,8 +20,8 @@ int main()
 {
     // 由于显存 2 GB，float 为 4 字节，double 为 8 字节，所以在 transpose3, transpose4中：
     // float 矩阵维度不能超过 726；
-    // double 矩阵维度不能超过 342；
-    const int N = 300;  
+    // double 矩阵维度不能超过 512；
+    const int N = 500;  
     const int M = N * N * sizeof(real);
 
     int SIZE = 0;
