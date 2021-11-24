@@ -123,7 +123,7 @@ CUDA 采用 nvcc 作为编译器，支持 C++ 代码；nvcc 在编译 CUDA 程�
 
 ## CUDA 的头文件
 
-CUDA 头文件的后缀依然是 “.h”；同时，采用 nvcc 编译器会自动包含必要的 cuda 头文件，  
+CUDA 头文件的后缀一般是 “.cuh”；同时，同时可以包含c/cpp 的头文件 “.h”、“.hpp”，采用 nvcc 编译器会自动包含必要的 cuda 头文件，  
 如 <cuda.h>, <cuda_runtime.h>，同时前者也包含了c++头文件 <stdlib.h>。
 
 ------
