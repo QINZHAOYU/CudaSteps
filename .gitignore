@@ -11,11 +11,12 @@
 # HelloWrold.class
 AStyle.exe
 *.orig
+*/result.txt
+xy.txt
 
 # 忽略指定文件夹
 build/
 */bin/
-*/result.txt
 */__pycache__/
 .vs/
 .vscode/

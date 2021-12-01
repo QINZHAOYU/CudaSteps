@@ -29,5 +29,5 @@ using namespace std::chrono;
 
 #define cppClockCurr                                                               \
     tStop = system_clock::now();                                                   \
-    t = duration<double, std::milli>(tStart - tStop).count();                      \
+    t = duration<double, std::milli>(tStop - tStart).count();                      \
     printf("cpp time cost: %f ms.\n", t);                                          \
