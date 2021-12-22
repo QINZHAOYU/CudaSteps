@@ -136,6 +136,7 @@ nvcc 会先将设备代码编译为 PTX（parrallel thread execution）伪汇编
 在编译为 PTX 代码时，需要选项 `-arch=compute_XY` 指定一个虚拟架构的计算能力；在编译为 cubin 代码时，  
 需要选项 `-code=sm_ZW` 指定一个真实架构的计算能力，以确定可执行文件能够使用的 GPU。
 
+
 真实架构的计算能力必须大于等于虚拟架构的计算能力，例如： 
 
     -arch=compute_35  -code=sm_60  (right)
@@ -167,3 +168,68 @@ nvcc 会先将设备代码编译为 PTX（parrallel thread execution）伪汇编
 
 ------
 
+## 显卡架构和计算能力
+
+1. 费米 Fermi（cuda 3.2~cuda 8）
+SM20 or SM_20, compute_30 –
+GeForce 400, 500, 600, GT-630.
+CUDA 10 以后就完全不支持了。
+
+2. 开普勒 Kepler（cuda 5~cuda 10）
+SM30 or SM_30, compute_30 –
+GeForce 700, GT-730
+支持了统一内存模型编程
+
+SM35 or SM_35, compute_35 –
+Tesla K40.
+支持动态并行化。
+
+SM37 or SM_37, compute_37 –
+Tesla K80.
+增加了一些寄存器。
+
+CUDA 11 以后就完全不支持了。
+
+2. 麦克斯韦 Maxwell（CUDA 6~CUDA 11）
+SM50 or SM_50, compute_50 –
+Tesla/Quadro M 系列
+
+SM52 or SM_52, compute_52 –
+Quadro M6000 , GeForce 900, GTX-970, GTX-980, GTX Titan X
+
+SM53 or SM_53, compute_53 –
+Tegra (Jetson) TX1 / Tegra X1, Drive CX, Drive PX, Jetson Nano
+
+cuda 11 以后彻底不支持
+
+4. 帕斯卡 Pascal (CUDA 8 ~今)
+SM60 or SM_60, compute_60 –
+Quadro GP100, Tesla P100, DGX-1 (Generic Pascal)
+
+SM61 or SM_61, compute_61–
+GTX 1080, GTX 1070, GTX 1060, GTX 1050, GTX 1030, Titan Xp, Tesla P40, Tesla P4, Discrete GPU on the NVIDIA Drive PX2
+
+SM62 or SM_62, compute_62 –
+Integrated GPU on the NVIDIA Drive PX2, Tegra (Jetson) TX2
+
+5. 伏特 Volta (CUDA 9 ~今)
+SM70 or SM_70, compute_70 –
+DGX-1 with Volta, Tesla V100, GTX 1180 (GV104), Titan V, Quadro GV100
+
+SM72 or SM_72, compute_72 –
+Jetson AGX Xavier, Drive AGX Pegasus, Xavier NX
+
+6. 图灵Turing (CUDA 10 ~今)
+SM75 or SM_75, compute_75 –
+GTX/RTX Turing – GTX 1660 Ti, RTX 2060, RTX 2070, RTX 2080, Titan RTX, Quadro RTX 4000, Quadro RTX 5000, Quadro RTX 6000, Quadro RTX 8000, Quadro T1000/T2000, Tesla T4
+
+7. 安培Ampere (CUDA 11 ~今)
+SM80 or SM_80, compute_80 –
+NVIDIA A100 (不再用特斯拉（Tesla）做名字了 – GA100), NVIDIA DGX-A100
+
+SM86 or SM_86, compute_86 – (from CUDA 11.1 onwards)
+Tesla GA10x, RTX Ampere – RTX 3080, GA102 – RTX 3090, RTX A6000, RTX A40
+
+8. 哈珀Hopper (CUDA 12 计划中)
+SM90 or SM_90, compute_90 –
+NVIDIA H100 (GH100)
