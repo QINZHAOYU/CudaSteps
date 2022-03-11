@@ -68,7 +68,8 @@ CUDA 基于 CUDA 事件的计时方法：
 
     >> nvprof ./bin/clock
 
-（没有输出结果）。
+如果没有输出结果，需要将`nvprof`的目录包含到环境环境变量中（不支持7.5 以上计算能力的显卡）。  
+推荐采用一代性能分析工具： [Nvidia Nsight Systems](https://developer.nvidia.com/zh-cn/nsight-systems).
 
 ------
 
